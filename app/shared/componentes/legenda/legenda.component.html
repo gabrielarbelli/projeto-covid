@@ -1,0 +1,6 @@
+<ul class="legenda">
+    <li class="legenda__item" *ngFor="let item of legenda">
+        <i class="legenda__icone" [style.background-color]="item.classeCor"></i>
+        <span class="legenda_nome">{{ item.nome }}: {{ item.descricao }}</span>
+    </li>
+</ul>
