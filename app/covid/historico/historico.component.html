@@ -1,0 +1,16 @@
+<div *ngIf="lineChartData">
+    <canvas baseChart
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [chartType]="lineChartType"
+        [options]="lineChartOptions"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend">
+    </canvas>
+</div>
+
+<!-- Acessibilidade -->
+<div *ngFor="let item of json">
+    <span class="sr-only" tabindex="0">Data: {{ item.data }}</span>
+    <span class="sr-only" tabindex="0">Óbitos: {{ item.deaths }}</span>
+</div>

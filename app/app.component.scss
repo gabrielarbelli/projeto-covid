@@ -1,0 +1,79 @@
+:root{
+    --primeira-cor: #3fa6ec;
+    --segunda-cor: #ff6384;
+    --terceira-cor: #6A5ACD;
+    --quarta-cor: #008B8B;
+    --quinta-cor: #8B6969;
+    --sexta-cor: #FFF68F;
+}
+
+*{
+    outline: none;
+}
+
+.toolbar{
+    background-color: red;
+    font-size: 20px;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color:rgba($color: #000000, $alpha: 0.9);
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    animation: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    overflow: hidden;
+    z-index: 3;
+    bottom: 0px;
+}
+
+.menu:hover{
+    width: 100%;
+}
+
+.corpo{
+    position: relative;
+    padding: 1rem 1rem 6rem 1rem;
+}
+
+.sr-only{
+    position: absolute;
+    left: 9999px;
+    font-size: 0;
+}
+
+
+@media (min-width: 1024px) {
+    .menu{
+        position: relative;
+        float: left;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        width: 4rem;
+        height: 90vh;
+    }
+    .menu:hover{
+        width: auto;
+    }
+    .corpo{
+        position: relative;
+        padding: 1rem 11rem 1rem 15rem;
+    }
+}

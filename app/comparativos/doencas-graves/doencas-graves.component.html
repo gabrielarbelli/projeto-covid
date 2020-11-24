@@ -1,0 +1,22 @@
+<div class="grafico-covid__grid-legenda">
+    <div class="container-canvas">
+        <canvas baseChart 
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            [colors]="barChartColors">
+        </canvas>
+    </div>
+
+    <app-legenda [legenda]="legenda"></app-legenda>
+</div>
+
+<!-- Acessibilidade -->
+<div>
+    <span class="sr-only" tabindex="0">Covid-19: {{ mortesCovid.toFixed() }}</span>
+    <span class="sr-only" tabindex="0">Doenças do Aparelho Circulatório: {{ mortesCirculatorio.toFixed() }}</span>
+    <span class="sr-only" tabindex="0">Neoplasias (Câncer): {{ mortesNeoplasia.toFixed() }}</span>
+    <span class="sr-only" tabindex="0">Doenças Parasitárias: {{ mortesParasitaria.toFixed() }}</span>
+</div>

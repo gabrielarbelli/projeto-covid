@@ -1,0 +1,70 @@
+<div class="grafico-covid">
+  
+  <section>
+    <article>
+
+      <h2 class="grafico-covid__pagina-titulo" tabindex="0">Corona Vírus</h2>
+
+      <p class="grafico-covid__descricao" tabindex="0">
+        Seja bem-vindo ao Portal Brasil Covid-19, uma plataforma onde você pode visualizar os dados 
+        reais dessa pandemia no Brasil e ainda ver comparativos com outras doenças!
+      </p>
+      
+      <div class="grafico-covid__grid-numeros">
+        <div class="grafico-covid__numeros-hoje">
+          <p class="grafico-covid__numeros-descricao" tabindex="0">
+            Casos confirmados
+          </p>
+          <p class="grafico-covid__numeros-descricao grafico-covid__azul" tabindex="0">{{ casosConfirmados | thousandPlaces }}</p>
+        </div>
+
+        <div class="grafico-covid__numeros-hoje">
+          <p class="grafico-covid__numeros-descricao" tabindex="0">
+            Casos recuperados
+          </p>
+          <p class="grafico-covid__numeros-descricao grafico-covid__verde" tabindex="0">{{ casosRecuperados | thousandPlaces }}</p>
+        </div>
+
+        <div class="grafico-covid__numeros-hoje">
+          <p class="grafico-covid__numeros-descricao" tabindex="0">
+            Casos ativos
+          </p>
+          <p class="grafico-covid__numeros-descricao grafico-covid__amarelo" tabindex="0">{{ casosAtivos | thousandPlaces }}</p>
+        </div>
+
+        <div class="grafico-covid__numeros-hoje">
+          <p class="grafico-covid__numeros-descricao" tabindex="0">
+            Óbitos
+          </p>
+          <p class="grafico-covid__numeros-descricao grafico-covid__vermelho" tabindex="0">{{ casosObitos | thousandPlaces }}</p>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+  <section class="grafico-covid__grid-dois">
+    <div class="grafico-covid__card">
+      <h2 class="grafico-covid__card-titulo" tabindex="0">Covid-19 nos últimos dias</h2>
+      <app-historico [local]='local'></app-historico>
+    </div>
+    <div class="grafico-covid__card">
+      <h2 class="grafico-covid__card-titulo" tabindex="0">Proporção dos casos de Covid-19</h2>
+      <app-proporcao [casosConfirmados]='casosConfirmados' [casosAtivos]='casosAtivos' [casosRecuperados]='casosRecuperados' [casosObitos]='casosObitos'></app-proporcao>
+    </div>
+  </section>
+
+  <section class="grafico-covid__grid">
+    
+    <p class="grafico-covid__descricao" tabindex="0">
+      Abaixo podemos ver em tempo real os números dessa pandemia por estado.
+    </p>
+
+    <div class="grafico-covid__card">
+      <h2 class="grafico-covid__card-titulo" tabindex="0">Casos x Óbitos por Covid-19 até hoje</h2>
+      <app-obitos [local]='local'></app-obitos>
+    </div>
+
+  </section>
+
+</div>

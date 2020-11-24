@@ -1,0 +1,28 @@
+<div class="grafico-covid">
+
+    <h2 class="grafico-covid__pagina-titulo" tabindex="0">Comparativos</h2>
+    
+    <p class="grafico-covid__descricao" tabindex="0">
+      Em tempos de pandemia, muito se fala dos óbitos causados pela Covid-19 e outras doenças acabam nem sendo lembradas. Veja um comparativo do número de óbitos por ano por Covid-19 em comparação com algumas doenças graves.
+    </p>
+  
+    <section class="grafico-covid__grid">
+      <div class="grafico-covid__card">
+        <h3 class="grafico-covid__card-titulo" tabindex="0">Covid-19 x Doenças graves (média de mortes por ano)</h3>
+        <app-doencas-graves [mortesCovid]='mortesCovid' [local]='local'></app-doencas-graves>
+      </div>
+    </section>
+
+    <p class="grafico-covid__descricao" tabindex="0">
+      Outra comparação importante que podemos observar é da Covid-19 com algumas doenças parasitárias que mais mataram nos últimos anos.
+    </p>
+
+    <section class="grafico-covid__grid">
+      <div class="grafico-covid__card">
+        <h3 class="grafico-covid__card-titulo" tabindex="0">Covid-19 x Doenças parasitárias (média de mortes por ano)</h3>
+        <app-doencas-parasitarias [mortesCovid]='mortesCovid' [local]='local'></app-doencas-parasitarias>
+      </div>
+    </section>
+  
+  </div>
+  

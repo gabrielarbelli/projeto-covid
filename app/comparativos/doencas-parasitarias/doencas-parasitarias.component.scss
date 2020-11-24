@@ -1,0 +1,18 @@
+.grafico-covid__grid-legenda{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-canvas{
+    height: 12rem;
+}
+
+@media (min-width: 1024px) {
+    .container-canvas{
+        height: 18rem;
+    }
+    .grafico-covid__grid-legenda{
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 2rem;
+    }
+}

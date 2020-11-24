@@ -1,0 +1,106 @@
+.grafico-covid{
+}
+
+.grafico-covid__descricao{
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.grafico-covid__grid{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.grafico-covid__grid-dois{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.grafico-covid__card{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.grafico-covid__pagina-titulo{
+    font-size: 1.25rem;
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+
+.grafico-covid__card-titulo{
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.grafico-covid__grid-numeros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.grafico-covid__numeros-hoje{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.grafico-covid__numeros-descricao{
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.grafico-covid__azul{
+    color: #3fa6ec;
+}
+
+.grafico-covid__verde{
+    color: #00FA9A;
+}
+
+.grafico-covid__amarelo{
+    color: yellow;
+}
+
+.grafico-covid__vermelho{
+    color: #ff6384;
+}
+
+
+
+@media (min-width: 1024px) {
+    .grafico-covid__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1rem;
+        margin-bottom: 0;
+    }
+    .grafico-covid__grid-dois{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
+    }
+    .grafico-covid__pagina-titulo{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .grafico-covid__card-titulo{
+        font-size: 1.125rem;
+    }
+    .grafico-covid__grid-numeros{
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 1rem;
+    }
+    .grafico-covid__numeros-hoje{
+        margin-bottom: 0rem;
+    }
+}
